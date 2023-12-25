@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   width: 100%;
@@ -245,7 +249,6 @@ body {
   letter-spacing: -0.9px;
   color: #FFFFFF;
 }
-
 
 
 
