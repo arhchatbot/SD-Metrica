@@ -28,7 +28,7 @@ body {
 
 .nav li {
   margin-right: 60px;
-  display: inline-block; 
+  display: inline-block;
 }
 
 
@@ -64,7 +64,7 @@ body {
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
-  line-height: 60px; 
+  line-height: 60px;
   letter-spacing: -1.8px;
 }
 
@@ -100,7 +100,7 @@ body {
   line-height: normal;
   letter-spacing: -0.54px;
   text-transform: uppercase;
-  color: #121212; 
+  color: #121212;
 }
 
 .about__text {
@@ -180,7 +180,7 @@ body {
   line-height: normal;
   letter-spacing: -0.6px;
   text-decoration: none;
-  color:#AD1818;
+  color: #AD1818;
 }
 
 
@@ -205,8 +205,10 @@ body {
 }
 
 .services {
+  margin: 0 auto;
   padding-top: 151px;
   padding-bottom: 150px;
+  width: 1400px;
   background: #121212;
 }
 
@@ -251,4 +253,134 @@ body {
 }
 
 
+.fullscreen-image {
+  margin: 0 auto;
+  width: 1400px;
+  height: 717px;
+  background-image: url('../resourses/bedfoto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.fullscreenimage__box {
+  position: relative;
+  height: 717px;
+}
+
+.fullscreenimage__text {
+  position: absolute;
+  left: 125px;
+  bottom: 60px;
+  width: 443px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  color: #FFF;
+}
+
+.contacts__box {
+  position: relative;
+  height: 553px;
+}
+
+.contacts__text {
+  position: absolute;
+  bottom: 342px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.contacts__text::before {
+  position: absolute;
+  left: -4px;
+  bottom: 37px;
+  content: url('../resourses/logo-iphone.png');
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.contacts__number {
+  position: absolute;
+  bottom: 250px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.contacts__mail {
+  position: absolute;
+  bottom: 160px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+  opacity: 0.5;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  color: #121212;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 1400px;
+  height: 229px;
+  flex-shrink: 0;
+  background: #121212;
+}
+
+.footer__box {
+  position: relative;
+  height: 229px;
+}
+
+
+.footer__nav {
+  position: absolute;
+  display: inline-block;
+  left: 470px;
+  bottom: 144px;
+  vertical-align: top;
+}
+
+.footer__nav li {
+  margin-right: 54px;
+  display: inline-block;
+}
+
+.footer__nav__link {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.footer__text {
+  position: absolute;
+  left: 509px;
+  bottom: 30px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  opacity: 0.5;
+  color: #FFF;
+}
