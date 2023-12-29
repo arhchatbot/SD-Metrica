@@ -205,16 +205,13 @@ body {
 }
 
 .services {
-  margin: 0 auto;
   padding-top: 151px;
   padding-bottom: 150px;
-  width: 1400px;
   background: #121212;
 }
 
-
-
 .services__title {
+  margin-bottom: 34px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -236,11 +233,7 @@ body {
 }
 
 .service__item {
-  margin-top: 60px;
-}
-
-.services__list li:first-child {
-  margin-top: 34px;
+  margin-bottom: 60px;
 }
 
 .service__title {
@@ -253,7 +246,7 @@ body {
 }
 
 
-.fullscreen-image {
+.gallery {
   margin: 0 auto;
   width: 1400px;
   height: 717px;
@@ -262,15 +255,8 @@ body {
   background-size: cover;
 }
 
-.fullscreenimage__box {
-  position: relative;
-  height: 717px;
-}
-
-.fullscreenimage__text {
-  position: absolute;
-  left: 125px;
-  bottom: 60px;
+.gallery__text {
+  padding-top: 575px;
   width: 443px;
   font-size: 30px;
   font-style: normal;
@@ -281,13 +267,15 @@ body {
 }
 
 .contacts__box {
-  position: relative;
-  height: 553px;
+  box-sizing: border-box;
+
 }
 
 .contacts__text {
-  position: absolute;
-  bottom: 342px;
+  position: relative;
+  display: block;
+  margin-top: 186px;
+  margin-bottom: 32px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -308,8 +296,8 @@ body {
 }
 
 .contacts__number {
-  position: absolute;
-  bottom: 250px;
+  margin-bottom: 30px;
+  display: block;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -320,8 +308,8 @@ body {
 }
 
 .contacts__mail {
-  position: absolute;
-  bottom: 160px;
+  margin-bottom: 160px;
+  display: block;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -335,24 +323,14 @@ body {
 }
 
 .footer {
-  margin: 0 auto;
-  width: 1400px;
-  height: 229px;
-  flex-shrink: 0;
+  padding-bottom: 30px;
   background: #121212;
 }
 
-.footer__box {
-  position: relative;
-  height: 229px;
-}
-
-
 .footer__nav {
-  position: absolute;
+  margin-top: 60px;
+  margin-left: 345px;
   display: inline-block;
-  left: 470px;
-  bottom: 144px;
   vertical-align: top;
 }
 
@@ -373,9 +351,9 @@ body {
 }
 
 .footer__text {
-  position: absolute;
-  left: 509px;
-  bottom: 30px;
+  display: block;
+  margin-top: 87px;
+  margin-left: 384px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
