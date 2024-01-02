@@ -123,6 +123,7 @@ body {
   font-weight: 400;
   line-height: normal;
   border-radius: 5px;
+  text-decoration: none;
   background: #AD1818;
   color: #FFFFFF;
   cursor: pointer;
@@ -248,7 +249,7 @@ body {
 
 .gallery {
   margin: 0 auto;
-  width: 1400px;
+  max-width: 1400px;
   height: 717px;
   background-image: url('../resourses/bedfoto.png');
   background-repeat: no-repeat;
@@ -266,15 +267,13 @@ body {
   color: #FFF;
 }
 
-.contacts__box {
-  box-sizing: border-box;
-
+.contacts {
+  margin-top: 186px;
+  margin-bottom: 160px;
 }
 
-.contacts__text {
+.contacts__title {
   position: relative;
-  display: block;
-  margin-top: 186px;
   margin-bottom: 32px;
   font-size: 18px;
   font-style: normal;
@@ -285,17 +284,17 @@ body {
   color: #121212;
 }
 
-.contacts__text::before {
+.contacts__title::before {
+  content: "";
   position: absolute;
   left: -4px;
   bottom: 37px;
-  content: url('../resourses/logo-iphone.png');
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
+  background-image: url('../resourses/logo-iphone.png'); 
 }
 
-.contacts__number {
+.contacts__phone {
   margin-bottom: 30px;
   display: block;
   font-size: 60px;
@@ -308,8 +307,6 @@ body {
 }
 
 .contacts__mail {
-  margin-bottom: 160px;
-  display: block;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
