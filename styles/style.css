@@ -364,7 +364,7 @@ body {
   color: #FFF;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
   .container {
     width: 100%;
     padding: 0 15px;
@@ -380,7 +380,7 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .container {
     width: 100%;
     padding: 0 14px 0 13px;
@@ -389,7 +389,7 @@ body {
 
   .hero__title {
     margin-bottom: 25px;
-    width: 348px;
+    max-width: 348px;
     font-size: 30px;
     line-height: 31px;
     letter-spacing: -0.9px;
