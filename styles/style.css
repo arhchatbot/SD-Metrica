@@ -364,7 +364,7 @@ body {
   color: #FFF;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 961px) {
   .container {
     width: 100%;
     padding: 0 15px;
@@ -380,7 +380,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 520px) {
   .container {
     width: 100%;
     padding: 0 14px 0 13px;
