@@ -61,7 +61,7 @@ body {
 
 .hero__title {
   margin-bottom: 30px;
-  width: 956px;
+  max-width: 956px;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -366,8 +366,7 @@ body {
 
 @media (max-width: 961px) {
   .container {
-    width: 100%;
-    padding: 0 15px;
+    
     background-color: #AD1818;
   }
 
@@ -382,7 +381,6 @@ body {
 
 @media (max-width: 520px) {
   .container {
-    width: 100%;
     padding: 0 14px 0 13px;
     background-color: gold;
   }
