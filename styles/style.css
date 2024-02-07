@@ -81,7 +81,7 @@ body {
   position: absolute;
   left: 40px;
   bottom: 40px;
-  width: 430px;
+  max-width: 430px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -106,7 +106,7 @@ body {
 
 .about__text {
   margin-top: 30px;
-  width: 1048px;
+  max-width: 1048px;
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
@@ -134,18 +134,12 @@ body {
 }
 
 .project {
-  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
-.projects__list li:first-child {
+.projects__list {
   margin-top: 30px;
 }
-
-.project__box {
-  margin-bottom: 15px;
-  height: 450px;
-}
-
 
 .projects__title {
   font-size: 18px;
@@ -157,12 +151,16 @@ body {
   color: #121212;
 }
 
+.project__box {
+  margin-bottom: 15px;
+  height: 450px;
+}
+
 .project__image {
   height: 100%;
   width: 100%;
-  background-size: cover;
+  object-fit: cover;
 }
-
 
 .project__title {
   margin-bottom: 15px;
@@ -186,16 +184,16 @@ body {
 
 
 .projects__link {
-  margin-top: 90px;
   display: block;
-  line-height: 153px;
+  padding: 56px 0;
   border: 1px solid #AD1818;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
   color: #AD1818;
   font-size: 30px;
-  letter-spacing: -0.9px;
+  line-height: 41px;
+  letter-spacing: -3%;
 }
 
 .projects__link:hover {
@@ -365,10 +363,6 @@ body {
 }
 
 @media (max-width: 961px) {
-  .container {
-    
-    background-color: #AD1818;
-  }
 
   .hero__title {
     margin-bottom: 30px;
@@ -377,12 +371,54 @@ body {
     line-height: 60px;
     letter-spacing: -1.5px;
   }
+
+  .hero__box {
+    height: 400px;
+    background-image: url('../resourses/tablet_interior.png');
+  }
+
+  .hero__text {
+    bottom: 30px;
+  }
+
+  .hero {
+    margin-bottom: 120px;
+  }
+
+  .about__text {
+    max-width: 690px;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: -3%;
+  }
+
+  .project {
+    margin-bottom: 80px;
+  }
+
+  .project:last-child {
+    margin-bottom: 100px;
+  }
+
+  .project__title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: -3%;
+  }
+
+  .project__box {
+    margin-bottom: 20px;
+  }
+
+  .projects {
+    margin-bottom: 103px;
+  }
 }
 
 @media (max-width: 520px) {
   .container {
     padding: 0 14px 0 13px;
-    background-color: gold;
   }
 
   .hero__title {
@@ -391,5 +427,89 @@ body {
     font-size: 30px;
     line-height: 31px;
     letter-spacing: -0.9px;
+  }
+
+  .hero__box {
+    height: 304px;
+    background-image: url('../resourses/mobile_interior.png');
+  }
+
+  .hero__text {
+    max-width: 312px;
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .hero {
+    margin-bottom: 80px;
+  }
+
+  .about__title {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -3%;
+  }
+
+  .about__text {
+    margin-top: 20px;
+    max-width: 346px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .about__btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -3%;
+    border-radius: 4px;
+  }
+
+  .project {
+    margin-bottom: 50px;
+  }
+
+  .project:last-child {
+    margin-bottom: 60px;
+  }
+
+  .projects__title {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -3%;
+  }
+
+  .project__box {
+    margin-bottom: 20px;
+    height: 250px;
+  }
+
+  .project__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project__title {
+    margin-bottom: 11px;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: -3%;
+  }
+
+  .project__link {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -3%;
+  }
+
+  .projects__link {
+    padding: 37px 0;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .projects {
+    margin-bottom: 144px;
   }
 }

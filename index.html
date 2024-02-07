@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Метрика</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,13 +30,13 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero__title">Современные и стильные интерьеры для комфортной жизни</h1>
-        <!-- <div class="hero__box">
+        <div class="hero__box">
           <p class="hero__text">Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и
-            реализацией дизайн-проектов</p> 
-        </div>-->
+            реализацией дизайн-проектов</p>
+        </div>
       </div>
     </section>
-    <!-- <section id="aboutus" class="about">
+    <section id="aboutus" class="about">
       <div class="container">
         <h2 class="about__title">О НАС</h2>
         <p class="about__text">Студия основана в 2011 году. Полностью отдаемся проектированию и реализации интерьеров. К
@@ -51,21 +51,33 @@
         <ul class="projects__list">
           <li class="project">
             <div class="project__box">
-              <img class="project__image" src="resourses/interior_hall.jpg" alt="интерьер зала">
+              <picture>
+                <source media="(max-width: 520px)" srcset="resourses/mobile_interiorhall.png">
+                <source media="(max-width: 961px)" srcset="resourses/tablet_interiorhall.png">
+                <img class="project__image" src="resourses/interior_hall.jpg" alt="интерьер зала">
+              </picture>
             </div>
             <h3 class="project__title">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
             <a class="project__link" href="#">Подробнее →</a>
           </li>
           <li class="project">
             <div class="project__box">
-              <img class="project__image" src="resourses/interior_hall_2.jpg" alt="интерьер зала с телевизором">
+              <picture>
+                <source media="(max-width: 520px)" srcset="resourses/mobile_interiorhall2.png">
+                <source media="(max-width: 961px)" srcset="resourses/tablet_interiorhall2.png">
+                <img class="project__image" src="resourses/interior_hall_2.jpg" alt="интерьер зала с телевизором">
+              </picture>
             </div>
             <h3 class="project__title">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
             <a class="project__link" href="#">Подробнее →</a>
           </li>
           <li class="project">
             <div class="project__box">
-              <img class="project__image" src="resourses/dining_room.jpg" alt="столовая">
+              <picture>
+                <source media="(max-width: 520px)" srcset="resourses/mobile_diningroom.png">
+                <source media="(max-width: 961px)" srcset="resourses/tablet_diningroom.png">
+                <img class="project__image" src="resourses/dining_room.jpg" alt="столовая">
+              </picture>
             </div>
             <h3 class="project__title">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
             <a class="project__link" href="#">Подробнее →</a>
@@ -74,7 +86,7 @@
         <a class="projects__link" href="#">Смотреть все проекты</a>
       </div>
     </section>
-    <section id="allservices" class="services">
+    <!-- <section id="allservices" class="services">
       <div class="container">
         <h3 class="services__title">Услуги</h3>
         <ul class="services__list">
@@ -118,7 +130,7 @@
           <a class="contacts__mail" href="mailto:hello@mail.com">hello@mail.com</a>
         </div>
       </div>
-    </section> -->
+    </section>  -->
   </main>
   <!-- <footer class="footer">
     <div class="container">
