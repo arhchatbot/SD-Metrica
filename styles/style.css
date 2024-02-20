@@ -235,7 +235,7 @@ body {
 .services__image {
   margin-bottom: 25px;
   height: 388px;
- 
+
 }
 
 .service__image {
@@ -325,13 +325,55 @@ body {
   width: 75%;
 }
 
-.gallery {
+.gallery-section {
   margin: 0 auto;
-  width: 1400px;
+  max-width: 1400px;
+}
+
+.gallery__slides {
+  position: relative;
   height: 717px;
-  background-image: url('../resourses/bedfoto.png');
+}
+
+.gallery__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.gallery__box {
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.active-gallery__box {
+  background-image: url('../resourses/gallery1photo.png');
+  opacity: 1;
+}
+
+.second-gallery__box {
+  background-image: url('../resourses/gallery2photo.png');
+}
+
+.third-gallery__box {
+  background-image: url('../resourses/gallery3photo.png');
+}
+
+.fourth-gallery__box {
+  background-image: url('../resourses/gallery4photo.png');
+}
+
+
+.gallery__title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .gallery__text {
@@ -500,9 +542,9 @@ body {
   .services__image {
     margin-bottom: 15px;
     height: 315px;
-   
+
   }
-  
+
   .service__title {
     font-size: 25px;
     line-height: 34px;
