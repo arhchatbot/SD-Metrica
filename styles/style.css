@@ -344,27 +344,13 @@ body {
   opacity: 0;
 }
 
-.gallery__box {
+.gallery__image {
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
 }
 
-.active-gallery__box {
-  background-image: url('../resourses/gallery1photo.png');
+.gallery__slide_active {
   opacity: 1;
-}
-
-.second-gallery__box {
-  background-image: url('../resourses/gallery2photo.png');
-}
-
-.third-gallery__box {
-  background-image: url('../resourses/gallery3photo.png');
-}
-
-.fourth-gallery__box {
-  background-image: url('../resourses/gallery4photo.png');
 }
 
 
