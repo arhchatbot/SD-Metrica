@@ -188,9 +188,10 @@
     </section>
     <section class="gallery-section">
       <div class="gallery">
+        <h2 class="gallery__title">галерея проектов</h2>
         <div class="gallery__slides">
-          <div class="gallery__slide">
-            <img class="gallery__image gallery__slide_active" src="resourses/gallery1photo.png" alt="gallery1photo">
+          <div class="gallery__slide gallery__slide_active">
+            <img class="gallery__image" src="resourses/gallery1photo.png" alt="gallery1photo">
           </div>
           <div class="gallery__slide">
             <img class="gallery__image" src="resourses/gallery2photo.png" alt="gallery3photo">
@@ -202,25 +203,23 @@
             <img class="gallery__image" src="resourses/gallery4photo.png" alt="gallery4photo">
           </div>
         </div>
-      </div>
-      <div class="container">
-        <h2 class="gallery__title">галерея проектов</h2>
-        <div class="gallery__controls">
-          <button class="gallery__control-prev">
-            << /button>
-              <button class="gallery__control-next">></button>
-        </div>
         <p class="gallery__text">Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж</p>
+        <div class="gallery__controls">
+          <button class="gallery__control-prev"><</button>
+          <button class="gallery__control-next">></button>
+        </div>
       </div>
     </section>
     <section id="allcontacts" class="contacts">
       <div class="container">
         <div class="contacts__box">
           <p class="contacts__text">КОНТАКТЫ</p>
-          <a class="contacts__number" href="tel:+7 935 895-45-35">+7 935 895-45-35</a>
-          <a class="contacts__mail" href="mailto:hello@mail.com">hello@mail.com</a>
+          <div class="contacts__wrapper">
+            <a class="contacts__number" href="tel:+7 935 895-45-35">+7 935 895-45-35</a>
+            <a class="contacts__mail" href="mailto:hello@mail.com">hello@mail.com</a>
+          </div>
+         </div>
         </div>
-      </div>
     </section>
   </main>
   <!-- <footer class="footer">
@@ -236,5 +235,5 @@
       <p class="footer__text">студия дизайна интерьера Метрика — 2023</p>
     </div>
   </footer> -->
-
+<script src="gallery.js"></script>
   <body>

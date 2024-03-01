@@ -344,45 +344,55 @@ body {
   opacity: 0;
 }
 
+.gallery__slide_active {
+  opacity: 1;
+}
+
 .gallery__image {
   height: 100%;
   object-fit: cover;
 }
 
-.gallery__slide_active {
-  opacity: 1;
+.gallery {
+  position: relative;
 }
 
 
 .gallery__title {
+  position: absolute;
+  top: 67px;
+  left: 124px;
   font-size: 22px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  z-index: 100;
   color: #FFFFFF;
 }
 
 .gallery__text {
+  position: absolute;
+  bottom: 67px;
+  left: 125px;
   padding-top: 575px;
-  width: 443px;
+  max-width: 443px;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 41px;
   letter-spacing: -0.9px;
   color: #FFF;
 }
 
-.contacts__box {
-  box-sizing: border-box;
-
+.gallery__controls {
+  position: absolute;
+  bottom: 165px;
+  left: 125px;
 }
 
 .contacts__text {
-  position: relative;
-  display: block;
-  margin-top: 186px;
-  margin-bottom: 32px;
+  margin-top: 150px;
+  margin-bottom: 74px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -392,19 +402,16 @@ body {
   color: #121212;
 }
 
-.contacts__text::before {
-  position: absolute;
-  left: -4px;
-  bottom: 37px;
-  content: url('../resourses/logo-iphone.png');
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
+
+.contacts__wrapper {
+  margin-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contacts__number {
-  margin-bottom: 30px;
-  display: block;
+  position: relative;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -415,8 +422,7 @@ body {
 }
 
 .contacts__mail {
-  margin-bottom: 160px;
-  display: block;
+  position: relative;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -428,6 +434,33 @@ body {
   text-underline-offset: 10px;
   color: #121212;
 }
+
+
+.contacts__number::before {
+  position: absolute;
+  content: "";
+  top: -46px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../resourses/logo-iphone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.contacts__mail::before {
+  position: absolute;
+  content: "";
+  top: -39px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../resourses/mail-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ 
 
 .footer {
   padding-bottom: 30px;
@@ -563,6 +596,34 @@ body {
   .review__description {
     font-size: 20px;
     line-height: 27px;
+  }
+
+  .gallery__title {
+    top: 80px;
+    left: 50px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .gallery__controls {
+    bottom: 155px;
+    left: 50px;
+  }
+
+  .gallery__text {
+    bottom: 80px;
+    left: 50px;
+    max-width: 377px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .contacts__text {
+    margin-top: 120px;
+  }
+
+  .contacts__wrapper {
+    margin-bottom: 120px;
   }
 }
 
@@ -740,6 +801,40 @@ body {
 
   .review_long {
     margin-top: 0;
+  }
+
+  .gallery__title {
+    top: 61px;
+    left: 12px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .gallery__controls {
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 5px;
+    justify-content: space-between;
+    bottom: 50%;
+    left: 0;
+  }
+
+  .gallery__text {
+    bottom: 60px;
+    left: 13px;
+    max-width: 287px;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .contacts__text {
+    margin-top: 8cqh;
+  }
+
+  .contacts__wrapper {
+    flex-direction: column;
+    margin-bottom: 80px;
   }
 
 }
